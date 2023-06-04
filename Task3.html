@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3 HTML</title>
+    <style>
+        body
+        {
+            padding: 0;
+            margin: 0;
+        }
+        ul.nested {
+            list-style: circle;
+        }
+
+        
+         
+        ul.outer {
+            border:1px solid black;
+            display: inline-block;
+            position: absolute;
+            left:50%;
+            transform: translateX(-50%);
+            width: 300px;
+            padding: 1px;
+        }
+
+        ul li {
+            margin-left: 25px;
+        }
+
+        
+        
+       
+    </style>
+</head>
+<body>
+    <ul class="outer">
+        <p>Lists can be nested (list within a list)</p>
+        <li>Coffee</li>
+        <li>Tea
+            <ul class="nested">
+                <li>Black Tea</li>
+                <li>Green Tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+</body>
+</html>
